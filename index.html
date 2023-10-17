@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <input class="in" type="text" id="row" value="">
+    <br>
+    <br>
+    <div class="row1"> 
+        <button class="col" onclick="display(1)">1</button>
+        <button class="col" onclick="display(2)">2</button>
+        <button class="col" onclick="display(3)">3</button>
+        <button class="col" onclick="display('+')">+</button>
+    </div>
+<br>
+<div class="row2"> 
+    <button class="col" onclick="display(4)">4</button>
+    <button class="col" onclick="display(5)">5</button>
+    <button class="col" onclick="display(6)">6</button>
+    <button class="col" onclick="display('-')">-</button>
+</div>
+<br>
+<div class="row3"> 
+    <button class="col" onclick="display(7)">7</button>
+    <button class="col" onclick="display(8)">8</button>
+    <button class="col" onclick="display(9)">9</button>
+    <button class="col" onclick="display('*')">*</button>
+</div>
+<br>
+<div class="row4"> 
+    <button class="col" onclick="clc()">clear</button>
+    <button class="col" onclick="display(0)">0</button>
+    <button class="col" onclick="sum()">=</button>
+    <button class="col" onclick="display('/')">/</button>
+    </div>
+
+    <script>
+        function display(value)
+        {
+            document.getElementById("row").value+=value;
+        }
+        function clc()
+        {
+            document.getElementById("row").value="";
+        }
+        function sum()
+        {
+            // var input = document.getElementById("row").value;
+            // var result = eval(input);
+            document.getElementById("row").value = eval(document.getElementById("row").value);
+        }
+    </script>
+    </body>
+</html>

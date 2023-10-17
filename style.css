@@ -1,0 +1,18 @@
+.col{
+    background-color:aliceblue;
+}
+.in{
+    background-color:bisque;
+}
+.col{
+    margin-left:50px;
+    height:100px;
+    width:100px;
+    font-size:30px;
+}
+.in{
+    height:100px;
+    width:400px;
+    margin-left:135px;
+    font-size:30px;
+}
